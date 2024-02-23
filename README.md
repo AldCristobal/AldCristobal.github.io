@@ -32,6 +32,7 @@ https://AldCristobal.github.io
 14. added fourth project in Previous Projects and docu
 15. added contents and docu references
 16. 4th project image adjustment
+17. image adjustments and container size changes
 
 ## References
 
