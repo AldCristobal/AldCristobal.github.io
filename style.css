@@ -1,3 +1,4 @@
+/* ---------------------------------- BANNER ---------------------------------- */
 .flex-container-banner {
     display: flex;
     border-style: solid;
@@ -14,17 +15,88 @@
     flex-flow: row;
 }
 
-.img-banner {
+/* ---------------------------------- TOP ---------------------------------- */
+.flex-container-top {
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.flex-item-top {
+    border-style: none;
+    flex-flow: row;
+}
+
+.img-top {
     border-radius: 50%;
 }   
 
-.flex-container {
+/* ---------------------------------- ABOUT ME ---------------------------------- */
+
+.flex-container-abtme {
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.flex-item-abtme {
+    border-style: none;
+    flex-flow: row;
+    text-align: center;
+    text-align-last: center;
+}
+
+/* ---------------------------------- PROJECTS ---------------------------------- */
+
+.flex-container-proj {
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-container-projsub {
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-item-proj {
+    border-style: none;
+    align-items: center;
+}
+
+/* ---------------------------------- SKILLS AND ACHIEVEMENTS ---------------------------------- */
+
+.flex-container-sna {
     display: flex;
     border-style: none;
     align-items: center;
 }
 
-.flex-item {
+.flex-item-sna {
+    border-style: none;
+    align-items: center;
+}
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+
+.flex-container-footer {
+    display: flex;
+    border-style: none;
+    align-items: center;
+}
+
+.flex-item-footer {
     border-style: none;
     align-items: center;
 }
