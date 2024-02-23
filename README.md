@@ -30,7 +30,10 @@ https://AldCristobal.github.io
 12. adjust Previous Projects images and Footer links
 13. added third game in Previous Projects
 14. added fourth project in Previous Projects and docu
+15. added contents and docu
 
 ## References
 
 GitHub Pages - https://pages.github.com/
+FlexBox - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox 
+CSS Image Styling - https://www.w3schools.com/css/css3_images.asp 
