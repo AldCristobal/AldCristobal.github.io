@@ -30,7 +30,7 @@ https://AldCristobal.github.io
 12. adjust Previous Projects images and Footer links
 13. added third game in Previous Projects
 14. added fourth project in Previous Projects and docu
-15. added contents and docu
+15. added contents and docu references
 
 ## References
 
