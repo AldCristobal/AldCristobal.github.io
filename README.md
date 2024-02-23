@@ -20,7 +20,16 @@ https://AldCristobal.github.io
 2. Hello World - Github pages test
 3. Update README - Updated README info, included GitHub Page creation steps.
 4. reformat README - some text missing due to using greater than and less than symbols.
-5. flexbox test -
+5. flexbox test
+6. proto banner - prototype banner
+7. added About Me and Previous Projects
+8. added Skills and Achievements
+9. added Footer
+10. added Previous Projects image and flexbox containers
+11. added Navigation
+12. adjust Previous Projects images and Footer links
+13. added third game in Previous Projects
+14. added fourth project in Previous Projects and docu
 
 ## References
 
