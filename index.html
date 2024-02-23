@@ -2,9 +2,59 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <style>
+            .flex-container {
+                display: flex;
+                border-style: solid;
+                border-width: 5px;
+                border-color: red;
+            }
+    
+            .flex-item {
+                border-style: solid;
+                border-width: 2px;
+                border-color: red;
+            }
+    
+        </style>
+    
     </head>
 
     <body>
         <p style="color:red">Hello World!</p>
+
+        <div class="flex-container">
+            <div class="flex-item" style="flex: 3;">
+                <h1>1</h1>
+                <p>This is a paragraph</p>
+            </div>
+            <div class="flex-item" style="flex: 3;">
+                <h1>2</h1>
+                <p>This is another paragraph</p>
+            </div>
+            <div class="flex-item" style="flex: 2;">
+                <h1>3</h1>
+                <p>This is another paragraph</p>
+                <p>This is another paragraph</p>
+            </div>
+            <div class="flex-item" style="flex: 4;">
+                <h1>4</h1>
+                <p>This is another paragraph</p>
+            </div>
+            <div class="flex-item" style="flex: 3;">
+                <h1>5</h1>
+                <p>This is another paragraph</p>
+                <p>This is another paragraph</p>
+                <p>This is another paragraph</p>
+                <p>This is another paragraph</p>
+                <p>This is another paragraph</p>
+            </div>
+            <div class="flex-item" style="flex: 1;">
+                <h1>6</h1>
+                <p>This is another paragraph</p>
+            </div>
+        </div>
+        
+        
     </body>
 </html>
