@@ -80,7 +80,17 @@
 .flex-container-sna {
     display: flex;
     border-style: none;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.flex-container-snasub {
+    display: flex;
+    border-style: none;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .flex-item-sna {
