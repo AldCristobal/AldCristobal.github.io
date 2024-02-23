@@ -1,0 +1,30 @@
+.flex-container-banner {
+    display: flex;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.flex-item-banner {
+    border-style: none;
+    flex-flow: row;
+}
+
+.img-banner {
+    border-radius: 50%;
+}   
+
+.flex-container {
+    display: flex;
+    border-style: none;
+    align-items: center;
+}
+
+.flex-item {
+    border-style: none;
+    align-items: center;
+}
