@@ -31,6 +31,7 @@ https://AldCristobal.github.io
 13. added third game in Previous Projects
 14. added fourth project in Previous Projects and docu
 15. added contents and docu references
+16. 4th project image adjustment
 
 ## References
 
