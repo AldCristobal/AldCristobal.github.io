@@ -72,6 +72,7 @@
 
 .flex-item-proj {
     border-style: none;
+    justify-content: center;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
