@@ -1,5 +1,5 @@
 **Name:** Cristobal, Aldrine Drebb L.<br/>
-**Section** UV-3L <br/>
+**Section:** UV-3L <br/>
 
 ## Repository Description
 
