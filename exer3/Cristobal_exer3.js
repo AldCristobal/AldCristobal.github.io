@@ -17,7 +17,7 @@ function passValidation(pw1, pw2) {
 		errSTR += " 8 characters";
 		err = 1;
 	}
-	let uc, lc, num = 0
+	let uc = 0, lc = 0, num = 0
 	for(let i = 0; i < pw1.length; i++){
 		if(!isNaN(pw1[i] * 1)){
 			//number
@@ -30,7 +30,7 @@ function passValidation(pw1, pw2) {
 			//uppercase
 			uc = 1;
 		}
-	}
+	}//error message
 	if(uc==0){
 		if (err == 1){
 			errSTR += ","
@@ -62,8 +62,17 @@ function passValidation(pw1, pw2) {
 //pass validation test cases
 pvTestCases = [	["a","a"],["a","b"],["abaababa","abaababa"],["abaababa","abaababb"],
 				["abaababA","abaababA"],["abaababA","abaababB"],["1baababA","1baababA"],
-				["1baababA","1baababB"],["1baababA2","1baababA2"],["1baababA2","1baababB2"],
-				["Pass1234","Pass1234"],["Pass1234","Pass12345"]]
+				["1baababA","1baababB"],["Pass1234","Pass1234"],["Pass1234","Pass12345"]]
+pvtcDescription = [	"|| SAME PASSWORD, INSUFFICIENT LENGTH, W/O NUMBER AND UPPERCASE ||",
+					"|| DIFF PASSWORD, INSUFFICIENT LENGTH, W/O NUMBER AND UPPERCASE ||",
+					"|| SAME PASSWORD, SUFFICIENT LENGTH, W/O NUMBER AND UPPERCASE ||",
+					"|| DIFF PASSWORD, SUFFICIENT LENGTH, W/O NUMBER AND UPPERCASE ||",
+					"|| SAME PASSWORD, SUFFICIENT LENGTH, W/O NUMBER ||",
+					"|| DIFF PASSWORD, SUFFICIENT LENGTH, W/O NUMBER ||",
+					"|| SAME PASSWORD, SUFFICIENT LENGTH ||",
+					"|| DIFF PASSWORD, SUFFICIENT LENGTH ||",
+					"|| SAMPLE TEST CASE 1 ||",
+					"|| SAMPLE TEST CASE 2 ||"]
 // for (let i = 0; i<pvTestCases.length; i++){
 // 	console.log(">>>"+pvTestCases[i][0]+" "+pvTestCases[i][1]);
 // 	passValidation(pvTestCases[i][0],pvTestCases[i][1]);
@@ -102,6 +111,7 @@ function passChange(inputName, pw1, pw2) {
 }
 //passChange test cases
 for (let i = 0; i<pvTestCases.length; i++){
+	console.log(pvtcDescription[i]);
 	console.log(">>>"+pvTestCases[i][0]+" "+pvTestCases[i][1]);
 	console.log(passChange("John",pvTestCases[i][0],pvTestCases[i][1]));
 	console.log("\n");
