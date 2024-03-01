@@ -17,21 +17,35 @@ function passValidation(pw1, pw2) {
 		errSTR += " 8 characters";
 		err = 1;
 	}
-	if(/[A-Z]/.test(pw1)==false){
+	let uc, lc, num = 0
+	for(let i = 0; i < pw1.length; i++){
+		if(!isNaN(pw1[i] * 1)){
+			//number
+			num = 1;	
+		}
+		else if(pw1[i] == pw1[i].toLowerCase()){
+			//lowercase
+			lc = 1;
+		}else if(pw1[i] == pw1[i].toUpperCase()){
+			//uppercase
+			uc = 1;
+		}
+	}
+	if(uc==0){
 		if (err == 1){
 			errSTR += ","
 		}
 		errSTR += " 1 uppercase character";
 		err = 1;
 	}
-	if(/[a-z]/.test(pw1)==false){
+	if(lc==0){
 		if (err == 1){
 			errSTR += ","
 		}
 		errSTR += " 1 lowercase character";
 		err = 1;
 	}
-	if(/[0-9]/.test(pw1)==false){
+	if(num==0){
 		if (err == 1){
 			errSTR += ","
 		}
@@ -48,7 +62,8 @@ function passValidation(pw1, pw2) {
 //pass validation test cases
 pvTestCases = [	["a","a"],["a","b"],["abaababa","abaababa"],["abaababa","abaababb"],
 				["abaababA","abaababA"],["abaababA","abaababB"],["1baababA","1baababA"],
-				["1baababA","1baababB"],["1baababA2","1baababA2"],["1baababA2","1baababB2"]]
+				["1baababA","1baababB"],["1baababA2","1baababA2"],["1baababA2","1baababB2"],
+				["Pass1234","Pass1234"],["Pass1234","Pass12345"]]
 // for (let i = 0; i<pvTestCases.length; i++){
 // 	console.log(">>>"+pvTestCases[i][0]+" "+pvTestCases[i][1]);
 // 	passValidation(pvTestCases[i][0],pvTestCases[i][1]);
@@ -56,19 +71,24 @@ pvTestCases = [	["a","a"],["a","b"],["abaababa","abaababa"],["abaababa","abaabab
 
 //returns the reversed string pw
 function passReversion(pw) {
+	//iterate from last char to first char of input pw
 	let revPass = ""
 	for(let i = pw.length-1; i > -1; i--){
 		revPass += pw[i];
 	}
-	console.log(revPass);
+	console.log("--Reversed: "+revPass);
 	return revPass;
 }
+//passReversion test cases
 // for (let i = 0; i<pvTestCases.length; i++){
 // 	console.log(">>>"+pvTestCases[i][0]);
 // 	passReversion(pvTestCases[i][0]);
 // }
 
-//
+//accepts 3 string params, name, password 1 and 2
+//validate the passwords, if validated, reverse the password 
+//else, use the first password
+//they are to be used for the newpassword value of an object with the name as name attribute
 function passChange(inputName, pw1, pw2) {
 	let newPass = pw1;
 	if (passValidation(pw1,pw2)){
@@ -80,9 +100,9 @@ function passChange(inputName, pw1, pw2) {
 	}
 	return account;
 }
-
+//passChange test cases
 for (let i = 0; i<pvTestCases.length; i++){
 	console.log(">>>"+pvTestCases[i][0]+" "+pvTestCases[i][1]);
-	console.log(passChange("AC",pvTestCases[i][0],pvTestCases[i][1]));
+	console.log(passChange("John",pvTestCases[i][0],pvTestCases[i][1]));
+	console.log("\n");
 }
-
