@@ -1,0 +1,19 @@
+{
+  "name": "exer4",
+  "version": "1.0.0",
+  "description": "JS password validation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
+  },
+  "type": "module"
+}
