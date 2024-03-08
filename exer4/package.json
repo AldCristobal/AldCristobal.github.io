@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node test.js"
   },
-  "author": "",
+  "author": "Aldrine Cristobal",
   "license": "ISC",
   "dependencies": {
     "uuid": "^9.0.1",
