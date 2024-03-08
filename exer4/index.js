@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import validator from 'validator';
 import { appendFile, existsSync, writeFile, statSync } from 'node:fs';
-// import { Buffer } from 'node:buffer';
 
 const generateUniqueID = (firstName, lastName) => {
 	return (firstName[0]+lastName).toLowerCase()+uuidv4().substring(0,8)
