@@ -26,7 +26,7 @@ When conditions are met, the data is saved in a text file, *users.txt*, using th
 
 1.  *added addAccount() and generateUniqueID()* - implementation of the program specifications
 2.  *updated exer4 README and documentation* 
-3.  *added inline documentation in index.js and test.js*
+3.  *added inline documentation in index.js and test.js, and added more valid test cases*
 
 ## References
  - https://www.npmjs.com/package/validator - validator module
