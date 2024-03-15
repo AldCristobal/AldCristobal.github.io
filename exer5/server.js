@@ -97,7 +97,6 @@ app.post('/add-book', (req, res) => {
 app.get('/find-by-isbn-author',(req,res)=>{
 	
 	let request = req.query;
-	console.log(request);
 
 	if(!request.isbn){
 		invalidReq(res, "Invalid ISBN.");
@@ -126,7 +125,6 @@ app.get('/find-by-isbn-author',(req,res)=>{
 app.get('/find-by-author',(req,res)=>{
 	
 	let request = req.query;
-	console.log(request);
 
 	if(!request.author){
 		invalidReq(res, "Invalid Author.")
@@ -134,16 +132,18 @@ app.get('/find-by-author',(req,res)=>{
 	}
 
 	let exists = false; 
-
+	let outRes = [];
 	for(let i = 0; i<bookList.length; i++){
 		if(bookList[i].author==request.author){
-			res.send(bookList[i]);
+			outRes.push(bookList[i]);
 			exists = true;
 		}
 	}
 
 	if(!exists){
 		res.send("Book entry with author: "+request.author+" does not exist.");
+	}else{
+		res.send(outRes);
 	}
 
 });
