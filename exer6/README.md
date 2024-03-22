@@ -1,14 +1,14 @@
-﻿
+﻿## Author
 **Name:** Cristobal, Aldrine Drebb L. <br/>
 **Section:** UV-3L
 
-## Code Description
+## Project Title
 User Management using Express, Mongoose, Needle, and MongoDB compass.
 
-## Code Specifications
+## Code Description and Specifications
 
 
-## Functionalities
+## How to Use
 
 
 ## Commit Log
