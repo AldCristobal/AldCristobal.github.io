@@ -1,4 +1,6 @@
 ﻿const submitButton = document.getElementById("submit-foodcard");
+const foodCardContainer = document.getElementById("foodcard-container");
+let foodCardArray = [];
 
 
 const validateForm = () => {
@@ -38,7 +40,9 @@ const validateForm = () => {
 		alert(alertmsg);
 	}
 	else{
-		alert("Valid");
+		// const food = foodname + "<br>" + desc + "<br>" + imagelink + "<br>" + ranking + "<br>";
+		const newFood = "<br><div class='foodcard'>	"+ ranking +"<br>"+imagelink+" <h1>"+foodname+"</h1>"+desc+"</div>";
+		foodCardContainer.innerHTML += "<br>" + newFood;
 	}
 
 	console.log({foodname, valid_foodname});
